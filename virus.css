@@ -22,8 +22,8 @@
 .virus {
     background-image: url(body.png);
     background-repeat: no-repeat;
-    background-size: 84%;
-    margin-top: 7.6%;
+    background-size: 80%;
+    margin-top: 7%;
     margin-left: 8%;
     height: 600px;
     width: 600px;
@@ -62,7 +62,7 @@
 }
 
 .throne {
-    height: 500px;
+    height: 400px;
     width: 50px;
 
 }
@@ -72,7 +72,7 @@
     height: 600px;
     width: 600px;
     background-repeat: no-repeat;
-    background-size: 99%;
+    background-size: 95%;
     position: absolute;
     animation:
         thrones-rotate 1.5s infinite linear,
@@ -91,7 +91,7 @@
     width: 500px;
     background-image: url(eyewhite.png);
     background-repeat: no-repeat;
-    background-size: 60%;
+    background-size: 55%;
     position: absolute;
     margin-top: 250px;
     left: 40.5%;
@@ -104,10 +104,10 @@
     width: 500px;
     background-image: url(eyeball.png);
     background-repeat: no-repeat;
-    background-size: 45%;
+    background-size: 40%;
     position: absolute;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 15px;
+    margin-left: 25px;
     animation: eyeball 3s infinite;
     animation-direction: alternate;
 
@@ -132,7 +132,7 @@
     position: absolute;
     background-size: 65%;
     margin-top: -5%;
-    margin-left: -5%;
+    margin-left: -4.5%;
 
 }
 
@@ -142,19 +142,20 @@
     background-image: url(mouth.png);
     background-repeat: no-repeat;
     position: absolute;
-    background-size: 85%;
-    margin-top: 25%;
-    margin-left: 10%;
-    animation: mouth-rotate 2s infinite;
+    background-size: 70%;
+    margin-top: 23%;
+    margin-left: 8%;
+    transform: rotate(5deg);
+    animation: mouth-rotate 3s infinite;
     animation-direction: alternate;
 }
 
 @keyframes mouth-rotate {
     from {
-        transform: rotate(0deg);
+        transform: rotate(2deg);
     }
 
     to {
-        transform: rotate(-10deg);
+        transform: rotate(-6deg);
     }
 }
