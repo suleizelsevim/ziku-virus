@@ -1,0 +1,160 @@
+.container {
+    margin: auto;
+    height: 600px;
+    width: 600px;
+}
+
+.inner-container {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.outer-virus {
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    animation:
+        body 3s infinite linear;
+    animation-direction: alternate;
+}
+
+.virus {
+    background-image: url(body.png);
+    background-repeat: no-repeat;
+    background-size: 84%;
+    margin-top: 7.6%;
+    margin-left: 8%;
+    height: 600px;
+    width: 600px;
+    position: absolute;
+}
+
+@keyframes body {
+    from {
+        transform: rotate(-5deg);
+    }
+
+    to {
+        transform: rotate(5deg);
+    }
+
+}
+
+@keyframes thrones-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(5deg);
+    }
+}
+
+@keyframes thrones-hop {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 50px;
+    }
+}
+
+.throne {
+    height: 500px;
+    width: 50px;
+
+}
+
+.thrones {
+    background-image: url(thrones.png);
+    height: 600px;
+    width: 600px;
+    background-repeat: no-repeat;
+    background-size: 99%;
+    position: absolute;
+    animation:
+        thrones-rotate 1.5s infinite linear,
+        thrones-hop 1s infinite;
+    animation-direction: alternate;
+
+}
+
+.face {
+    height: 500px;
+    width: 500px;
+}
+
+.eyewhite {
+    height: 300px;
+    width: 500px;
+    background-image: url(eyewhite.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    position: absolute;
+    margin-top: 250px;
+    left: 40.5%;
+    animation: thrones-hop 1s infinite;
+    animation-direction: alternate;
+}
+
+.eyeball {
+    height: 300px;
+    width: 500px;
+    background-image: url(eyeball.png);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+    animation: eyeball 3s infinite;
+    animation-direction: alternate;
+
+
+}
+
+@keyframes eyeball {
+    from {
+        left: -5px;
+    }
+
+    to {
+        left: 20px;
+    }
+}
+
+.eyebrows {
+    width: 500px;
+    height: 400px;
+    background-image: url(eyebrows.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 65%;
+    margin-top: -5%;
+    margin-left: -5%;
+
+}
+
+.mouth {
+    height: 250px;
+    width: 250px;
+    background-image: url(mouth.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 85%;
+    margin-top: 25%;
+    margin-left: 10%;
+    animation: mouth-rotate 2s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes mouth-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-10deg);
+    }
+}
