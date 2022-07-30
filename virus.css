@@ -11,32 +11,33 @@
 }
 
 .outer-virus {
-    height: 600px;
-    width: 600px;
+    height: 300px;
+    width: 300px;
+    background-size: 20%;
     position: absolute;
     animation:
-        body 3s infinite linear;
+        body 1s infinite linear;
     animation-direction: alternate;
+    padding-top: 7.4%;
+    padding-left: 8.5%;
 }
 
 .virus {
     background-image: url(body.png);
     background-repeat: no-repeat;
-    background-size: 80%;
-    margin-top: 7%;
-    margin-left: 8%;
-    height: 600px;
-    width: 600px;
+    background-size: 100%;
+    height: 328px;
+    width: 328px;
     position: absolute;
 }
 
 @keyframes body {
     from {
-        transform: rotate(-5deg);
+        transform: rotate(0deg);
     }
 
     to {
-        transform: rotate(5deg);
+        transform: rotate(3deg);
     }
 
 }
@@ -47,7 +48,7 @@
     }
 
     to {
-        transform: rotate(5deg);
+        transform: rotate(-3deg);
     }
 }
 
@@ -57,25 +58,27 @@
     }
 
     to {
-        top: 50px;
+        top: 40px;
     }
 }
 
 .throne {
     height: 400px;
     width: 50px;
+    padding-left: 20%;
 
 }
 
 .thrones {
     background-image: url(thrones.png);
-    height: 600px;
-    width: 600px;
+    height: 390px;
+    width: 390px;
     background-repeat: no-repeat;
-    background-size: 95%;
+    background-size: 100%;
     position: absolute;
+    padding-left: -10%;
     animation:
-        thrones-rotate 1.5s infinite linear,
+        thrones-rotate 1s infinite linear,
         thrones-hop 1s infinite;
     animation-direction: alternate;
 
@@ -84,6 +87,9 @@
 .face {
     height: 500px;
     width: 500px;
+    position: relative;
+    margin-top: -50%;
+    margin-left: -50%;
 }
 
 .eyewhite {
@@ -91,12 +97,22 @@
     width: 500px;
     background-image: url(eyewhite.png);
     background-repeat: no-repeat;
-    background-size: 55%;
+    background-size: 33%;
     position: absolute;
-    margin-top: 250px;
-    left: 40.5%;
-    animation: thrones-hop 1s infinite;
+    margin-top: 310px;
+    left: 50%;
+    animation: eyes 1s infinite;
     animation-direction: alternate;
+}
+
+@keyframes eyes {
+    from {
+        top: 3px;
+    }
+
+    to {
+        top: 10px;
+    }
 }
 
 .eyeball {
@@ -104,12 +120,12 @@
     width: 500px;
     background-image: url(eyeball.png);
     background-repeat: no-repeat;
-    background-size: 40%;
+    background-size: 25%;
     position: absolute;
-    margin-top: 15px;
-    margin-left: 25px;
-    animation: eyeball 3s infinite;
-    animation-direction: alternate;
+    margin-top: 4px;
+    margin-left: 15px;
+    animation:
+        eyeball 3s infinite alternate;
 
 
 }
@@ -120,7 +136,7 @@
     }
 
     to {
-        left: 20px;
+        left: 15px;
     }
 }
 
@@ -130,9 +146,9 @@
     background-image: url(eyebrows.png);
     background-repeat: no-repeat;
     position: absolute;
-    background-size: 65%;
-    margin-top: -5%;
-    margin-left: -4.5%;
+    background-size: 50%;
+    margin-top: -7%;
+    margin-left: -9%;
 
 }
 
@@ -142,20 +158,31 @@
     background-image: url(mouth.png);
     background-repeat: no-repeat;
     position: absolute;
-    background-size: 70%;
-    margin-top: 23%;
-    margin-left: 8%;
-    transform: rotate(5deg);
-    animation: mouth-rotate 3s infinite;
-    animation-direction: alternate;
+    background-size: 44%;
+    margin-top: 17%;
+    margin-left: 0%;
+    transform: rotate(8deg);
+    animation:
+        mouth-rotate 2s infinite alternate,
+        mouth-dir 2s infinite alternate;
 }
 
 @keyframes mouth-rotate {
     from {
-        transform: rotate(2deg);
+        transform: rotate(0deg);
     }
 
     to {
-        transform: rotate(-6deg);
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes mouth-dir {
+    from {
+        left: 3%;
+    }
+
+    to {
+        left: -5%;
     }
 }
