@@ -79,7 +79,7 @@
     padding-left: -10%;
     animation:
         thrones-rotate 1s infinite linear,
-        thrones-hop 1s infinite;
+        thrones-hop 0.7s infinite;
     animation-direction: alternate;
 
 }
