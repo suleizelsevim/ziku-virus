@@ -97,11 +97,11 @@
     width: 500px;
     background-image: url(eyewhite.png);
     background-repeat: no-repeat;
-    background-size: 33%;
+    background-size: 30%;
     position: absolute;
     margin-top: 310px;
-    left: 50%;
-    animation: eyes 1s infinite;
+    left: 52%;
+    animation: eyes 0.7s infinite;
     animation-direction: alternate;
 }
 
@@ -120,10 +120,10 @@
     width: 500px;
     background-image: url(eyeball.png);
     background-repeat: no-repeat;
-    background-size: 25%;
+    background-size: 23%;
     position: absolute;
     margin-top: 5px;
-    margin-left: 15px;
+    margin-left: 13px;
     animation:
         eyeball 3s infinite alternate;
 
@@ -136,7 +136,7 @@
     }
 
     to {
-        left: 15px;
+        left: 10px;
     }
 }
 
@@ -146,8 +146,8 @@
     background-image: url(eyebrows.png);
     background-repeat: no-repeat;
     position: absolute;
-    background-size: 50%;
-    margin-top: -7%;
+    background-size: 45%;
+    margin-top: -6%;
     margin-left: -9%;
 
 }
@@ -159,8 +159,8 @@
     background-repeat: no-repeat;
     position: absolute;
     background-size: 44%;
-    margin-top: 16%;
-    margin-left: 0%;
+    margin-top: 17%;
+    margin-left: -2%;
     transform: rotate(8deg);
     animation:
         mouth-rotate 2s infinite alternate,
