@@ -1,2 +1,2 @@
 # ziku-virus
-<img src="son.gif" width="500">
+<img src="v2.gif" width="500">
