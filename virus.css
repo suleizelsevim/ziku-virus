@@ -16,7 +16,7 @@
     background-size: 20%;
     position: absolute;
     animation:
-        body 1s infinite linear;
+        body 0.9s infinite linear;
     animation-direction: alternate;
     padding-top: 7.4%;
     padding-left: 8.5%;
@@ -33,22 +33,22 @@
 
 @keyframes body {
     from {
-        transform: rotate(0deg);
+        transform: rotate(3deg);
     }
 
     to {
-        transform: rotate(3deg);
+        transform: rotate(0deg);
     }
 
 }
 
 @keyframes thrones-rotate {
     from {
-        transform: rotate(0deg);
+        transform: rotate(-3deg);
     }
 
     to {
-        transform: rotate(-3deg);
+        transform: rotate(0deg);
     }
 }
 
@@ -78,10 +78,10 @@
     position: absolute;
     padding-left: -10%;
     animation:
-        thrones-rotate 1s infinite linear,
-        thrones-hop 0.7s infinite;
+        thrones-rotate 0.9s infinite linear,
+        thrones-hop 0.9s infinite;
     animation-direction: alternate;
-
+    animation-timing-function: linear;
 }
 
 .face {
@@ -101,19 +101,8 @@
     position: absolute;
     margin-top: 310px;
     left: 52%;
-    animation: eyes 0.7s infinite;
-    animation-direction: alternate;
 }
 
-@keyframes eyes {
-    from {
-        top: 3px;
-    }
-
-    to {
-        top: 10px;
-    }
-}
 
 .eyeball {
     height: 300px;
@@ -122,10 +111,12 @@
     background-repeat: no-repeat;
     background-size: 23%;
     position: absolute;
-    margin-top: 5px;
+    margin-top: 3px;
     margin-left: 13px;
     animation:
         eyeball 3s infinite alternate;
+
+    animation-timing-function: cubic-bezier(200, 0, 0, 2);
 
 
 }
