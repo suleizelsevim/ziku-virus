@@ -16,7 +16,7 @@
     background-size: 20%;
     position: absolute;
     animation:
-        body 0.9s infinite linear;
+        body 0.91s infinite linear;
     animation-direction: alternate;
     padding-top: 7.4%;
     padding-left: 8.5%;
@@ -78,8 +78,8 @@
     position: absolute;
     padding-left: -10%;
     animation:
-        thrones-rotate 0.9s infinite linear,
-        thrones-hop 0.9s infinite;
+        thrones-rotate 0.91s infinite linear,
+        thrones-hop 0.91s infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
 }
@@ -116,7 +116,8 @@
     animation:
         eyeball 3s infinite alternate;
 
-    animation-timing-function: cubic-bezier(200, 0, 0, 2);
+    animation-timing-function: ease-in-out;
+
 
 
 }
@@ -154,8 +155,9 @@
     margin-left: -2%;
     transform: rotate(8deg);
     animation:
-        mouth-rotate 2s infinite alternate,
-        mouth-dir 2s infinite alternate;
+        mouth-rotate 1.82s infinite alternate,
+        mouth-dir 1.82s infinite alternate;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes mouth-rotate {
